@@ -55,6 +55,8 @@ Bundle 'rking/ag.vim'
 Bundle 'mileszs/ack.vim'
 Bundle 'vim-scripts/argtextobj.vim'
 Bundle 'terryma/vim-multiple-cursors'
+Bundle 'slim-template/vim-slim'
+Bundle 'wavded/vim-stylus'
 
 " Include user's local vim config
 let mapleader = ','
