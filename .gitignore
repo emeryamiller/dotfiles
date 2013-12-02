@@ -1,5 +1,7 @@
 *
 !.vimrc
+!.irbrc
+!.ackrc
 !.bashrc
 !.tmux.conf
 !.gitignore
