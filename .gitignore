@@ -8,4 +8,5 @@
 !.bash_config
 !.tmux.conf
 !.gitignore
+!.gitignore_global
 !.gemrc

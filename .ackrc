@@ -2,3 +2,5 @@
 --type-set=haml=.haml
 --type-set=sass=.sass
 --type-set=rabl=.rabl
+--type-set=slim=.slim
+--type-set=stylus=.styl
