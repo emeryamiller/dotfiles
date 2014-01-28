@@ -265,6 +265,8 @@ autocmd WinLeave * setlocal nocursorline
   nnoremap Q q
 " }
 
+
+  nnoremap <Leader>h :%s/:\([^ ]*\)\(\s*\)=>/\1:/g<CR>
 " Language addons {
     " Java {
         autocmd Filetype java set makeprg=javac\ %
