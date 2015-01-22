@@ -1,3 +1,4 @@
+echo "running bash_config"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # Git completion

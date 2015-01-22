@@ -1,3 +1,4 @@
+echo 'running bash_aliases'
 # General
 alias ls='ls -lpa'
 

@@ -2,11 +2,11 @@ set nocompatible
 " Vundle config and bundle definitians
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#rc()
 
 " let Vundle manage Vundle
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/Vundle.vim'
 
 " My Bundles
 Bundle 'tpope/vim-rails'
@@ -59,6 +59,7 @@ Bundle 'slim-template/vim-slim'
 Bundle 'wavded/vim-stylus'
 Bundle 'wting/rust.vim'
 Bundle 'bling/vim-airline'
+"call vundle#end()
 
 " Include user's local vim config
 let mapleader = ','
