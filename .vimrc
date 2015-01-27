@@ -59,6 +59,7 @@ Bundle 'slim-template/vim-slim'
 Bundle 'wavded/vim-stylus'
 Bundle 'wting/rust.vim'
 Bundle 'bling/vim-airline'
+Bundle 'mustache/vim-mustache-handlebars'
 "call vundle#end()
 
 " Include user's local vim config
