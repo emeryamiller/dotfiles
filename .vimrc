@@ -57,6 +57,9 @@ Bundle 'vim-scripts/argtextobj.vim'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'slim-template/vim-slim'
 Bundle 'wavded/vim-stylus'
+Bundle 'wting/rust.vim'
+Bundle 'bling/vim-airline'
+Bundle 'heartsentwined/vim-emblem'
 
 " Include user's local vim config
 let mapleader = ','
@@ -188,6 +191,7 @@ elseif has("unix")
 endif
 let g:gist_detect_filetype = 1
 let g:gist_open_browser_after_post = 1
+set clipboard=unnamed
 
 " Use modeline overrides
 set modeline
