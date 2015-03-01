@@ -1,5 +1,6 @@
 *
 !.vimrc
+!.vimrc2
 !.irbrc
 !.ackrc
 !.bashrc
@@ -8,4 +9,5 @@
 !.bash_config
 !.tmux.conf
 !.gitignore
+!.gitignore_global
 !.gemrc

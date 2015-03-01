@@ -1,3 +1,4 @@
+echo "running bash_config"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # Git completion
@@ -5,7 +6,7 @@ if [ -n $GIT_COMP ]; then
   if [ -f ${GIT_COMP}git-completion.bash ]; then
     source ${GIT_COMP}git-completion.bash
     [ -f ${GIT_COMP}git-prompt.sh ] && source ${GIT_COMP}/git-prompt.sh
-    PS1='\u $(__git_ps1 "(%s)")\$ '
+    PS1='\W$(__git_ps1 "(%s)")\$ '
   fi
 fi
 

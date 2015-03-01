@@ -1,3 +1,4 @@
+echo 'running bash_aliases'
 # General
 alias ls='ls -lpa'
 
@@ -25,5 +26,7 @@ alias sg='script/generate'
 ###
 
 # DB Access EOP
-alias devsql="mysql -u emery -h lucy -p sandbox"
+alias devsql="mysql -u emery -h lucy -p rubyfour"
+alias olddevsql="mysql -u emery -h lucy -p sandbox"
 alias testsql="mysql -u emery -h lucy -p test"
+alias stagesql="mysql -u emery -h lucy -p emery"

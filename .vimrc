@@ -2,11 +2,11 @@ set nocompatible
 " Vundle config and bundle definitians
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#rc()
 
 " let Vundle manage Vundle
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/Vundle.vim'
 
 " My Bundles
 Bundle 'tpope/vim-rails'
@@ -60,6 +60,8 @@ Bundle 'wavded/vim-stylus'
 Bundle 'wting/rust.vim'
 Bundle 'bling/vim-airline'
 Bundle 'heartsentwined/vim-emblem'
+Bundle 'mustache/vim-mustache-handlebars'
+"call vundle#end()
 
 " Include user's local vim config
 let mapleader = ','
@@ -170,6 +172,8 @@ map <Leader>te :tabe <C-R>=expand("%:p:h") . "/" <CR>
 " Inserts the path of the currently edited file into a command
 " Command mode: Ctrl+P
 cmap <C-P> <C-R>=expand("%:p:h") . "/" <CR>
+" Map F5 to clear ctrlp cache
+cmap <F5> :ClearCtrlPCache<CR>
 
 " Unimpaired configuration
 " Bubble single lines
@@ -245,6 +249,7 @@ autocmd WinLeave * setlocal nocursorline
   map <C-L> <C-W>l
   map <C-H> <C-W>h
 
+
   " Yank from the cursor to the end of the line, to be consistent with C and D.
   nnoremap Y y$
 
@@ -269,6 +274,10 @@ autocmd WinLeave * setlocal nocursorline
   nnoremap Q q
 " }
 
+
+  nnoremap <Leader>rh :%s/:\([^ ]*\)\(\s*\)=>/\1:/g<CR>
+  nnoremap <Leader>rt :%s/ThrowError(\([^)]*\))/flash[:alert] = \1/g<CR>
+  nnoremap <Leader>rw :%s/ThrowWarning(\([^) ]*\))/flash[:warning] = \1/g<CR>
 " Language addons {
     " Java {
         autocmd Filetype java set makeprg=javac\ %
