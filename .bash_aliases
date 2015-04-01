@@ -30,3 +30,6 @@ alias devsql="mysql -u emery -h lucy -p rubyfour"
 alias olddevsql="mysql -u emery -h lucy -p sandbox"
 alias testsql="mysql -u emery -h lucy -p test"
 alias stagesql="mysql -u emery -h lucy -p emery"
+
+alias mina_portal="mina deploy_crow && mina deploy_raven && mina deploy_magpie"
+alias mina_servers="mina deploy_ravage && mina deploy_november && mina deploy_december && mina deploy_sisyphus && mina deploy_nsmoke"
