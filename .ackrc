@@ -4,3 +4,7 @@
 --type-set=rabl=.rabl
 --type-set=slim=.slim
 --type-set=stylus=.styl
+--ignore-dir=node_modules
+--ignore-dir=bower_components
+--ignore-dir=tmp
+--ignore-file=ext:map
