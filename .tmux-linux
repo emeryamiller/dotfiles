@@ -1,0 +1,15 @@
+# Setup portal development
+new -s rails -n Editor -d
+splitw -h -p 25 -t 0
+send-keys -t dev 'cd ~/eop/portal' C-m
+send-keys -t dev 'vim' C-m
+
+neww -n Console -t rails
+send-keys -t dev:2 'cd ~/eop/portal' C-m
+send-keys -t dev:2 'rc' C-m
+
+neww -n Server -t rails
+send-keys -t dev:3 'cd ~/eop/portal' C-m
+send-keys -t dev:3 'rs -p 7001' C-m
+
+select-window -t rails:1

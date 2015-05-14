@@ -8,6 +8,8 @@
 !.bash_env
 !.bash_config
 !.tmux.conf
+!.tmux-macosx
+!.tmux-linux
 !.gitignore
 !.gitignore_global
 !.gemrc
